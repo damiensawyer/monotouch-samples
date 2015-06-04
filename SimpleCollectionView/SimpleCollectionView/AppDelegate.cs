@@ -5,6 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 using CoreGraphics;
+using System.Security.Principal;
 
 namespace SimpleCollectionView
 {
@@ -47,11 +48,13 @@ namespace SimpleCollectionView
 
             simpleCollectionViewController.CollectionView.ContentInset = new UIEdgeInsets (50, 0, 0, 0);
 
-            window.RootViewController = simpleCollectionViewController;
+            //window.RootViewController = simpleCollectionViewController;
+			window.RootViewController = new DamienViewController();
             window.MakeKeyAndVisible ();
 
             return true;
         }
+
     }
 }
 

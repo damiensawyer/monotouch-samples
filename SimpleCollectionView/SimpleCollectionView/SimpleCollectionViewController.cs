@@ -134,6 +134,8 @@ namespace SimpleCollectionView
 
     }
 
+
+
     public class AnimalCell : UICollectionViewCell
     {
         UIImageView imageView;
