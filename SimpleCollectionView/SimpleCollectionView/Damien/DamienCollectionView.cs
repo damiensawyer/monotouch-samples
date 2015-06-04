@@ -92,7 +92,7 @@ namespace SimpleCollectionView
 
 	public class DamienCell : UICollectionViewCell
 	{
-		[Export ("initWithFrame:")]
+		[Export ("initWithFrame:")] // need to do this... remove it to see why
 		public DamienCell (CGRect frame) : base (frame)
 		{
 
@@ -102,7 +102,7 @@ namespace SimpleCollectionView
 
 			ContentView.Layer.BorderColor = UIColor.LightGray.CGColor;
 			ContentView.Layer.BorderWidth = 2.0f;
-			ContentView.BackgroundColor = UIColor.White;
+			ContentView.BackgroundColor = UIColor.Blue;
 			ContentView.Transform = CGAffineTransform.MakeScale (0.8f, 0.8f);
 
 			var v = new UIView();
