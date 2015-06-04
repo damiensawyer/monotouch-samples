@@ -16,7 +16,7 @@ namespace SimpleCollectionView
         public SimpleCollectionViewController (UICollectionViewLayout layout) : base (layout)
         {
             animals = new List<IAnimal> ();
-            for (int i = 0; i < 20; i++) {
+            for (int i = 0; i < 2000; i++) {
                 animals.Add (new Monkey ());
             }
         }
