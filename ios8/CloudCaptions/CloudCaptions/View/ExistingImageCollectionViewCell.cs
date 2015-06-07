@@ -18,7 +18,6 @@ namespace CloudCaptions
 		public ExistingImageCollectionViewCell (IntPtr handle)
 			: base (handle)
 		{
-
 		}
 
 		public ExistingImageCollectionViewCell ()
